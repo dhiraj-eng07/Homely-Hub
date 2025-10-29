@@ -1,17 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "framework": "create-react-app",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "build",
   "env": {
     "NODE_ENV": "production"
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {}
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
